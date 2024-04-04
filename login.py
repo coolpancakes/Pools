@@ -20,7 +20,7 @@ def login():
 
 
 		''')
-	with open(r'C:\Users\h0hr\Secrets\login_hash.txt', 'r') as secret:
+	with open(r'C:\Users\h0hr\Secrets\secret.txt', 'r') as secret:
 		hashed = secret.readline()
 
 	try:
