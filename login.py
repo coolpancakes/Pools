@@ -30,5 +30,8 @@ def login():
 		data = key_.decrypt(bytes(hashed.encode()))
 		#print(help(Fernet.decode()))
 		print('\n     SUCCESS!')
+		time.sleep(4)
 	except:
 		print('\n     Invalid KEY!')
+		time.sleep(4)
+		login()
