@@ -33,7 +33,7 @@ def register():
 	key_f = Fernet(key)
 	encrypted_password = key_f.encrypt(bytes(password_encoded))
 		
-	hash_decoded=f'hash: {encrypted_password.decode()}'
+	hash_decoded=f'{encrypted_password.decode()}'
 	key_decoded=(f'key: {key.decode()}')
 
 	time.sleep(1)
@@ -44,7 +44,7 @@ def register():
 	time.sleep(2)
 
 	os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Secrets')
-	with open('login_hash.txt', 'w') as login:
+	with open('secret.txt', 'w') as login:
 		login.write(f'{hash_decoded}')
 
 		
