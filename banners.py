@@ -21,9 +21,8 @@ def banner1():
 				- coolpancakes
 		
 	
-    1) Register 
-    2) Login   
-    3) Exit 
+    1) Register   
+    2) Exit 
 	
 	''')
 
