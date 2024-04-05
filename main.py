@@ -13,8 +13,6 @@ def main():
 	if main_menu == '1':
 		register.register()
 	elif main_menu == '2':
-		login.login()
-	elif main_menu == '3':
 		exit()
 
 
