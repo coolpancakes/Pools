@@ -44,10 +44,12 @@ def register():
 	time.sleep(2)
 
 	os.chdir(f'C:\\Users\\{NODE_USERNAME}')
-	os.mkdir('Secrets')
-	os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Secrets')
-	with open('secret.txt', 'w') as login:
-		login.write(f'{hash_decoded}')
+	try:
+	    os.mkdir('Secrets')
+	except:
+	    os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Secrets')
+	    with open('secret.txt', 'w') as login:
+	        login.write(f'{hash_decoded}')
 
 		
 	os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Desktop')
