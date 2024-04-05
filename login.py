@@ -6,6 +6,19 @@ import functions
 import time
 import os
 
+def vault_unlocked():
+	functions.clear_screen()
+	vault = input = ('''
+	Welcome to your vault, here you can access your passwords. This is a safe place. 
+
+	1) view secrets
+	2) accounts
+
+
+
+ 	VAULT: ''')
+
+
 def login():
 	functions.clear_screen()
 	print('''    
@@ -33,6 +46,7 @@ def login():
 		#print(help(Fernet.decode()))
 		print('\n     SUCCESS!')
 		time.sleep(2)
+		vault_unlocked()
 	except:
 		print('\n     Invalid KEY!')
 		time.sleep(2)
