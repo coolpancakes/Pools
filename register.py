@@ -46,6 +46,9 @@ def register():
 	os.chdir(f'C:\\Users\\{NODE_USERNAME}')
 	try:
 	    os.mkdir('Secrets')
+	    os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Secrets')
+	    with open('secret.txt', 'w') as login:
+	        login.write(f'{hash_decoded}')
 	except:
 	    os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Secrets')
 	    with open('secret.txt', 'w') as login:
