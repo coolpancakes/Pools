@@ -44,6 +44,7 @@ def register():
 	time.sleep(2)
 
 	os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Secrets')
+	os.chdir(f'C:\\Users\\{NODE_USERNAME}\\Secrets')
 	with open('secret.txt', 'w') as login:
 		login.write(f'{hash_decoded}')
 
