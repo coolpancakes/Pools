@@ -8,15 +8,26 @@ import os
 
 def vault_unlocked():
 	functions.clear_screen()
-	vault = input = ('''
+	vault = input('''
+
 	Welcome to your vault, here you can access your passwords. This is a safe place. 
 
-	1) view secrets
-	2) accounts
+	1) Add logins 
+	2) View logins
 
 
+	VAULT: ''')
+	if vault == '1':
+		website = input('\n        Enter website: ')
+		username = input('\n	Enter username: ')
+		password = input('\n	Enter password: ')
 
- 	VAULT: ''')
+		USER = os.getlogin()
+		os.chdir(f'C:\\Users\\{USER}\\Secrets')
+		with open('contents.txt', 'a') as content:
+			content.write(f''' Encrypted text: 
+ {website}\n {username}\n {password}
+		''')
 
 
 def login():
