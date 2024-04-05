@@ -4,6 +4,7 @@ from cryptography.fernet import Fernet
 import hashlib
 import functions 
 import time
+import os
 
 def login():
 	functions.clear_screen()
