@@ -10,9 +10,6 @@ def re_write_main():
 
 
 def re_write_banner():
-    USER = os.getlogin()
-    home = Path(f'C:\\Users\\{USER}\\Desktop\\pools')
-    os.chdir(home)
     with open('banners.py', 'w') as banner:
         banner.write('# Banners for Pools password manager.\n\nimport os\n\ndef banner1():\n    print(\'\'\'\n    coolpancakes | pools | https://github.com/coolpancakes\n    _____________ _______ ________________________________\n\n    8""""8\n    8    8 eeeee eeeee e     eeeee\n    8eeee8 8  88 8  88 8     8   "\n    88     8   8 8   8 8e    8eeee\n    88     8   8 8   8 88       88\n    88     8eee8 8eee8 88eee 8ee88\n\n        Secured with the finest encryption\n              - coolpancakes\n\n    1) Login\n    2) Exit\n\n    \'\'\')')
         re_write_main()
