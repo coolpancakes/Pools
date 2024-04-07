@@ -25,9 +25,15 @@ def vault_unlocked():
 		USER = os.getlogin()
 		os.chdir(f'C:\\Users\\{USER}\\Secrets')
 		with open('contents.txt', 'a') as content:
-			content.write(f''' Encrypted text: 
- {website}\n {username}\n {password}
-		''')
+			content.write(f'''  
+ Website: {website}
+
+ Username: {username}
+
+ Password: {password} 
+ 
+ ---------------------
+ ''')
 
 
 def login():
